@@ -11,7 +11,8 @@
             sendVirtualAssistantMessage("This is not supported yet!");
             answer.loop();
         } else if (answer.containsIgnoreCase("dungeon", "spanking", "spankzchoir", "selfbondage", "pain", "torture", "chamber", "punish")) {
-            sendVirtualAssistantMessage("This is not supported yet!");
+           // sendVirtualAssistantMessage("This is not supported yet!");
+		   run("Dungeon/PunishmentBase.js"); 
             answer.loop();
         } else if (answer.containsIgnoreCase("setting", "clean", "adjust", "calibrate", "setup")) {
             sendVirtualAssistantMessage("This is not supported yet!");
@@ -20,16 +21,19 @@
             sendVirtualAssistantMessage("This is not supported yet!");
             answer.loop();
         } else if (answer.containsIgnoreCase("fitness", "health")) {
-            sendVirtualAssistantMessage("This is not supported yet!");
+			sendVirtualAssistantMessage("about to fitness");
+            run("Exercise/ExerciseBase.js"); 		    
+			//sendVirtualAssistantMessage("nice workout!");
             answer.loop();
         } else if (answer.containsIgnoreCase("report", "exercise")) {
-            sendVirtualAssistantMessage("This is not supported yet!");
+            run("Exercise/reportexercise.js");
             answer.loop();
         } else if (answer.containsIgnoreCase("work", "study")) {
             sendVirtualAssistantMessage("This is not supported yet!");
             answer.loop();
         } else if (answer.containsIgnoreCase("rule", "house", "commands", "orders")) {
-            sendVirtualAssistantMessage("This is not supported yet!");
+            //sendVirtualAssistantMessage("This is not supported yet!");
+			run("rules/HouseRules.js");
             answer.loop();
         } else if (answer.containsIgnoreCase("save", "end", "quit", "stop", "leave", "close", "finish")) {
             sendVirtualAssistantMessage(random("Bye", "Until next time", "See you", "I'm waiting for the next time", "Don't leave me alone to long", "Good bye", "Have a nice day", "I saved your process you can close the program"));
@@ -47,7 +51,7 @@
             sendVirtualAssistantMessage("Check settings");
             sendVirtualAssistantMessage("Enter the shop");
             //sendVirtualAssistantMessage("Do some fitness");
-            //sendVirtualAssistantMessage("Report for exercise (you can only complete an exercise every 10 hours)");
+            sendVirtualAssistantMessage("Report for exercise (you can only complete an exercise every 10 hours)");
             //sendVirtualAssistantMessage("Work/Study mode");
             sendVirtualAssistantMessage("Request to view the rules ");
             sendVirtualAssistantMessage("View the pin-board");
