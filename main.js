@@ -51,6 +51,6 @@ if(isFullTime()) {
     run("Startup/FullTime/FullTimeCheckup.js");
 }
 
-run("Session/Modules/Humiliation/Dynamic/AnalHumiliation.js");
+//run("Session/Modules/Humiliation/Dynamic/AnalHumiliation.js");
 
 run("Assistant/AssistantLobby.js");
